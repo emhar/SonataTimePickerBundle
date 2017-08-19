@@ -1,0 +1,7 @@
+services:
+    sonata.core.form.type.time_picker:
+        class: Emhar\SonataTimePickerBundle\Form\Type\TimePickerType
+        arguments:
+            - '@sonata.core.date.moment_format_converter'
+        tags:
+            - {name: form.type}
